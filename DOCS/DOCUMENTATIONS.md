@@ -26,5 +26,11 @@ List of Framework Documentations
 * GitHub: [https://github.com/FortAwesome/Font-Awesome](https://github.com/FortAwesome/Font-Awesome)
 
 
+## Ligature Symbols
+
+* Documentation: [http://kudakurage.com/ligature_symbols/](http://kudakurage.com/ligature_symbols/)
+* GitHub: [https://github.com/kudakurage/LigatureSymbols](https://github.com/kudakurage/LigatureSymbols)
+
+
 ## CodeIgniter i18n
 * Documentation: [http://maestric.com/doc/php/codeigniter_i18n](http://maestric.com/doc/php/codeigniter_i18n)

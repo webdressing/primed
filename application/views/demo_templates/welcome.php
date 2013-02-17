@@ -26,9 +26,10 @@
 
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/bootstrap-responsive.min.css">
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        
+        <link rel="stylesheet" href="assets/css/font-icons.css">
 		<!--[if IE 7]><link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css"><![endif]-->
-        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/demo.css">
 
         <script src="assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
                 
@@ -108,11 +109,11 @@
             <!-- Example row of columns -->
             <div class="row">
                 <div class="span4">
-                    <h2>Font Awesome</h2>
-                    <p>As I personally like them more, I've added the  <strong>Font Awesome 3.0</strong> Icons for Bootstrap. You will find the font itself at "assets/font".</p>
+                    <h2>Font Icon Sets</h2>
+                    <p>I've added <strong>Font Awesome 3.0</strong> and <strong>Ligature Symbols 2.11</strong> Icon Sets. You will find the fonts at "assets/fonts".</p>
                     <p>
-                    	<a class="btn btn-small btn-green tooltipped" href="http://fortawesome.github.com/Font-Awesome/" target="_blank" data-original-title="Documentation"><i class="icon-file-alt"></i> Documentation</a>
-                    	<a class="btn btn-small tooltipped" href="https://github.com/FortAwesome/Font-Awesome" target="_blank" data-original-title="show Project on GitHub"><i class="icon-github"></i> GitHub</a>
+                    	<a class="btn btn-small tooltipped" href="http://fortawesome.github.com/Font-Awesome/" target="_blank" data-original-title="Font Awesome Homepage"><i class="icon-star"></i> Font Awesome</a>
+                    	<a class="btn btn-small tooltipped" href="http://kudakurage.com/ligature_symbols/" target="_blank" data-original-title="Ligature Symbols Homepage"><i class="icon-star"></i> Ligature Symbols</a>
 					</p>
                	</div>
                 <div class="span4">
