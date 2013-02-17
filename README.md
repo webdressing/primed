@@ -1,20 +1,20 @@
-primed.
+primed
 =============================
 
-Ready to go Combo of CodeIgniter (2.1.3), HTML5 Boilerplate (4.1.0), extended Twitter Bootstrap (2.3.0)
-and internationalization for CodeIgniter.
+Ready to go Combo of extended CodeIgniter, HTML5 Boilerplate & Twitter Bootstrap 
+as base or faster and easier web development. 
 
 This Project consists of the Frameworks I most often use for developing a Website. It combines a stable,
 intuitive and well documented Application Framework with contemporary Frontend-Architecture.
 
-* Source: [https://github.com/webdressing/CodeIgniter-HTML5bp-Bootstrap](https://github.com/webdressing/CodeIgniter-HTML5bp-Bootstrap)
+* Source: [https://github.com/webdressing/primed](https://github.com/webdressing/primed)
 * Homepage: [http://www.webdressing.de](http://www.webdressing.de)
 
 
 ## How to start?
 
 1. Download the latest version from
-   [https://github.com/webdressing/CodeIgniter-HTML5bp-Bootstrap](https://github.com/webdressing/CodeIgniter-HTML5bp-Bootstrap)
+   [https://github.com/webdressing/primed](https://github.com/webdressing/primed)
 2. Copy the files to your Server and run the
    http://localhost/path-to-files/index.php
 3. Read the provided Documentations, explore the file-system, check out the Templates
