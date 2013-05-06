@@ -24,12 +24,7 @@
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="assets/icons/microsoft-tileicon.png">
 
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/bootstrap-responsive.min.css">
-        
-        <link rel="stylesheet" href="assets/css/font-icons.css">
-		<!--[if IE 7]><link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css"><![endif]-->
-        <link rel="stylesheet" href="assets/css/demo.css">
+        <link rel="stylesheet" href="assets/css/style.css">
 
         <script src="assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
                 
