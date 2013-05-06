@@ -2,7 +2,7 @@ primed
 =============================
 
 Ready to go Combo of extended CodeIgniter, HTML5 Boilerplate & Twitter Bootstrap 
-as base or faster and easier web development. 
+as base for faster and easier web development. 
 
 This Project consists of the Frameworks I most often use for developing a Website. It combines a stable,
 intuitive and well documented Application Framework with contemporary Frontend-Architecture.
@@ -29,6 +29,7 @@ that it fits your needs.
 * HTML5 ready & Cross-browser compatible through HTML5 Boilerplate Frontend-Template
 * Includes the latest [jQuery](http://jquery.com/) via CDN with a local fallback
 * Responsive templates, Cross-browser CSS3 styles and usefull & fancy Javascripts through Twitter Bootstrap
+* Easy CSS rendering with [Compass SCSS/SASS Framework](DOCS/COMPASS_INFO.md) integration
 * Extended Bootstrap with a lot of font-based icons
 * Internationalization extension for CodeIgniter, allready prepared for the European Union and easy to expand
 * Every used Framework or Plugin is well documented, open source and proven by daily use
