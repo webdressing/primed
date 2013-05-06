@@ -34,3 +34,8 @@ List of Framework Documentations
 
 ## CodeIgniter i18n
 * Documentation: [http://maestric.com/doc/php/codeigniter_i18n](http://maestric.com/doc/php/codeigniter_i18n)
+
+
+## Compass SCSS Framework
+* Installation: [http://compass-style.org/install/](http://compass-style.org/install/)
+* Documentation: [http://compass-style.org/reference/compass/](http://compass-style.org/reference/compass/)
