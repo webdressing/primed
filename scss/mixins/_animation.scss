@@ -1,0 +1,28 @@
+
+/**
+ * Mixin: _animation.scss
+ *
+ * Mixin to generate animations (https://github.com/ericam/compass-animate)
+ * Config-File: config/mixins
+ *
+ * Possible animations
+ *
+ * Attention    : attention, flash, bounce, shake, tada, swing, wobble, wiggle, pulse
+ * Fade         : fade,fadeIn, fadeInUp, fadeInDown, fadeInLeft, fadeInRight,fadeOut, fadeOutUp, fadeOutDown, fadeOutLeft, fadeOutRight
+ * Bounce       : bounce,bounceIn, bounceInDown, bounceInUp, bounceInLeft, bounceInRight,bounceOut, bounceOutDown, bounceOutUp, bounceOutLeft, bounceOutRight
+ * Roll         : roll,rollIn,rollOut
+ * Rotate       : rotate,rotateIn, rotateInDownLeft, rotateInDownRight, rotateInUpLeft, rotateInUpRight,rotateOut, rotateOutDownLeft, rotateOutDownRight, rotateOutUpLeft, rotateOutUpRight
+ * 
+ */
+
+@include animate-fadeIn;
+
+@mixin animate(
+	$name               : fadeIn, 
+	$duration           : $default-animation-duration, 
+	$delay              : $default-animation-delay, 
+	$function           : $default-animation-function, 
+	$mode               : $default-animation-mode)
+	{
+		@include experimental(animation, $name $duration $delay $function $mode);
+	}
