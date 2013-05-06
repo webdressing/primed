@@ -2,7 +2,7 @@ primed
 =============================
 
 Ready to go Combo of extended CodeIgniter, HTML5 Boilerplate & Twitter Bootstrap 
-as base or faster and easier web development. 
+as base for faster and easier web development. 
 
 This Project consists of the Frameworks I most often use for developing a Website. It combines a stable,
 intuitive and well documented Application Framework with contemporary Frontend-Architecture.
