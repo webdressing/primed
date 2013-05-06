@@ -1,0 +1,25 @@
+
+/**
+ * Mixin: _gridunits.scss
+ *
+ * Provides values for grid system
+ * Config-File: config/dimensions
+ * 
+ */
+
+
+$column-width: $max-page-width/$columns; 
+
+ 
+@mixin column($amount, $context: $max-page-width, $padding: $padding) { 
+	width: percentage(($column-width * $amount) / $max-page-width); 
+	padding: $padding; 
+} 
+
+@mixin height($amount, $context: $max-page-width) { 
+	height: percentage(($column-width * $amount) / $max-page-width); 
+} 
+
+@mixin breakpoint($size) { 
+ 	@media only screen and (max-width: $size) { @content; } 
+}
