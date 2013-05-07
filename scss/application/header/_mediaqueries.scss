@@ -7,186 +7,54 @@
  */
 
 
+/** 
+ * Small Desktop / Notebook  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ */
+
+
+@media only screen and (max-height: 768px) {
+	
+
+}
+
+
+/**
+ * Ipad Landscape  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ */
+
+
+@media only screen and (max-height: 768px) and (max-width: 1024px) {
+
+}
+
+
 /**
  * Ipad Portrait  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  */
 
 
 @media only screen and (max-height: 1024px) and (max-width: 768px) {
-
-	header {
-		.claim {
-		    margin-left: -200px;
-		    position: absolute;
-		    top: 5px;
-		    width: 480px;
-
-		    .claim-image {
-		      width: 250px;
-		      margin-top: 20px;
-		    }
-
-		    .logo {
-		      margin-right: 30px;
-		    }
-
-	  	}
-
-		.link,
-		.link:hover,
-		.link:active,
-		.link:visited {
-			left: 10px;
-		}
-
-  	}
+	
 
 }
 
 
 /**
- * Iphone 4 und andere
+ * Iphone 4 und andere - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  */
 
 
-@media only screen and (max-height: 640px) and (max-width: 940px) {
-
-	header {
-		.claim {
-		    margin-left: -200px;
-		    position: absolute;
-		    top: 5px;
-		    width: 480px;
-
-		    .claim-image {
-		      width: 250px;
-		      margin-top: 20px;
-		    }
-
-		    .logo {
-		      //margin-right: 30px;
-		      //width: 80px;
-		    }
-
-	  	}
-
-		.link,
-		.link:hover,
-		.link:active,
-		.link:visited {
-			left: 10px;
-		}
-
-  	}
-}
-
 @media only screen and (max-height: 940px) and (max-width: 640px) {
 
-	header {
-		.claim {
-		    margin-left: -150px;
-		    position: absolute;
-		    top: 5px;
-		    width: 480px;
 
-		    .claim-image {
-		      width: 250px;
-		      margin-top: 20px;
-		    }
 
-		    .logo {
-		      //margin-right: 30px;
-		      //width: 80px;
-		    }
 
-	  	}
-
-		.link,
-		.link:hover,
-		.link:active,
-		.link:visited {
-			left: 10px;
-		}
-
-  	}
 }
 
-@media only screen and (max-height: 480px) and (max-width: 320px) {
+@media only screen and (max-height: 640px) and (max-width: 940px) {
 
-	header {
 
-		/*height: 60px;
 
-		.banner .img-banner {
-			height: 110px;
-    	}*/
-
-		.claim {
-		    margin-left: -150px;
-		    position: absolute;
-		    top: 5px;
-		    width: 480px;
-
-		    .claim-image {
-		      margin-left: 140px;
-		      margin-top: 40px;
-		      width: 150px;
-		    }
-
-		    .logo {
-		      display: none;
-		    }
-
-	  	}
-
-		.link,
-		.link:hover,
-		.link:active,
-		.link:visited {
-			left: 10px;
-		}
-
-  	}
 }
 
-@media only screen and (max-height: 320px) and (max-width: 480px) {
-//@media all and (orientation:landscape) {
 
-	header {
-		
-		top: -10px;
-		height: 60px;
-
-		.banner .img-banner {
-			height: 100px;
-    	}
-
-		.claim {
-		    margin-left: -70px;
-		    position: absolute;
-		    top: 5px;
-		    width: 480px;
-
-		    .claim-image {
-		     	margin-top: 20px;
-    			width: 150px;
-		    }
-
-		    .logo {
-		      	margin-right: 17px;
-    		  	width: 80px;
-		    }
-
-	  	}
-
-		.link,
-		.link:hover,
-		.link:active,
-		.link:visited {
-			left: 6px;
-			top: 6px;
-			font-size: 9px;
-		}
-
-  	}
-}
