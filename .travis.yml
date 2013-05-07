@@ -3,4 +3,6 @@ php:
   - "5.3"
   - "5.2"
 
-phpunit
+notifications:
+  email:
+    - christopher@webdressing.de
