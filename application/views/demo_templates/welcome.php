@@ -119,8 +119,8 @@
 					</p>
                	</div>
                 <div class="span4">
-                    <h2>Compass</h2>
-                    <p>Generates well formatted CSS and makes your stylesheets easier to organize and maintain. </p>
+                    <h2>Supports SCSS</h2>
+                    <p>Generate well formatted CSS and make your stylesheets easier to organize and maintain with the Compass Framework. </p>
                     <p>
                         <a class="btn btn-small tooltipped" href="http://compass-style.org" target="_blank" data-original-title="Compass Homepage"><i class="icon-star"></i> Compass</a>
                     </p>
