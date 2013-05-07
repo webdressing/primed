@@ -1,0 +1,24 @@
+
+/**
+ * Config: _mixins.scss
+ *
+ * Default values and settings for Mixins
+ * 
+ */
+
+
+// Border Radius
+$default-border-radius: 		6px;
+
+// Transition Values
+$default-transition-property: 	all;
+$default-transition-duration: 	0.4;
+$default-transition-function: 	ease;
+$default-transition-delay: 		0s;
+
+// Animation Values
+$default-animation-name: 		fadeIn; 
+$default-animation-duration: 	1s;
+$default-animation-delay: 		0.2s;
+$default-animation-function: 	ease;
+$default-animation-mode: 		both;

@@ -1,0 +1,60 @@
+
+/**
+ * Application style: body mediaqueries
+ *
+ * Resize elements of Page Body depending on device screen resolution
+ * 
+ */
+
+
+/** 
+ * Small Desktop / Notebook  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ */
+
+
+@media only screen and (max-height: 768px) {
+	
+
+}
+
+
+/**
+ * Ipad Landscape  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ */
+
+
+@media only screen and (max-height: 768px) and (max-width: 1024px) {
+
+}
+
+
+/**
+ * Ipad Portrait  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ */
+
+
+@media only screen and (max-height: 1024px) and (max-width: 768px) {
+	
+
+}
+
+
+/**
+ * Iphone 4 und andere - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ */
+
+
+@media only screen and (max-height: 940px) and (max-width: 640px) {
+
+
+
+
+}
+
+@media only screen and (max-height: 640px) and (max-width: 940px) {
+
+
+
+}
+
+

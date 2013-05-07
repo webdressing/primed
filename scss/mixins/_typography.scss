@@ -1,0 +1,40 @@
+
+/**
+ * Mixin: _typography.scss
+ *
+ * Mixin to set color and font settings
+ * Config-File: config/colors, config/typography
+ * 
+ */
+
+
+@mixin fontcolor($color: '') {
+    @if $color == '' {
+        color               : $base-font-color;
+    } @else if $color == 'grey' {
+        color               : $font-color-grey;
+    } @else if $color == 'white' {
+        color               : $font-color-white;
+    } @else if $color == 'green' {
+        color               : $font-color-green;
+    } @else if $color == 'green-dark' {
+        color               : $font-color-green-dark;
+    } @else if $color == 'red' {
+        color               : $font-color-red;
+    }
+}
+
+
+@mixin font-size($size: ''){
+	@if $size == '' { $size: $default-font-size; }
+  	font-size: $size + px;
+  	font-size: ($size / 16) + rem;
+}
+
+
+@mixin basefont($fs: '', $fc: '') {
+	font-family: $default-font-stack;
+    @include fontcolor($color: $fc);
+    @include font-size($size: $fs);
+}
+

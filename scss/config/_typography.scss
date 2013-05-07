@@ -1,0 +1,14 @@
+
+/**
+ * Config: _typography.scss
+ *
+ * Default values and font-settings for Typography-Mixins
+ * 
+ */
+
+
+$fontPath:   					"../fonts" !default;
+
+$default-font-stack: 			Arial, sans-serif;
+
+$default-font-size: 			16;  // unit (px, rem) added via mixin

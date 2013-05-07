@@ -1,0 +1,57 @@
+
+/**
+ * (S)CSS: style.scss
+ *
+ * Generates the "style.css" which is used inside the application.
+ * 
+ */
+
+$experimental-support-for-khtml:false;
+$experimental-support-for-opera:false;
+
+@import "compass/css3";
+
+/**
+ * Import the configuration files
+ * 
+ */
+
+@import "config/colors";
+@import "config/dimensions";
+@import "config/mixins";
+@import "config/typography";
+
+
+/**
+ * Import Mixins
+ * 
+ */
+
+@import "mixins/gridunits";
+//@import "mixins/animation";
+@import "mixins/typography";
+
+
+/**
+ * Import Frameworks
+ * 
+ */
+
+@import "frameworks/bootstrap";
+@import "frameworks/bootstrap-responsive";
+@import "frameworks/font-awesome";
+@import "frameworks/ligature-symbols";
+
+
+/**
+ * Import the Application Styles
+ * 
+ */
+
+@import "application/header/default";
+//@import "application/header/mediaqueries";
+
+@import "application/body/default";
+//@import "application/body/mediaqueries";
+
+

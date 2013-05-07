@@ -24,12 +24,7 @@
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="assets/icons/microsoft-tileicon.png">
 
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/bootstrap-responsive.min.css">
-        
-        <link rel="stylesheet" href="assets/css/font-icons.css">
-		<!--[if IE 7]><link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css"><![endif]-->
-        <link rel="stylesheet" href="assets/css/demo.css">
+        <link rel="stylesheet" href="assets/css/style.css">
 
         <script src="assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
                 
@@ -123,6 +118,13 @@
                     	<a class="btn btn-small btn-green tooltipped" href="http://maestric.com/doc/php/codeigniter_i18n" target="_blank" data-original-title="User Guide"><i class="icon-file-alt"></i> Documentation</a>
 					</p>
                	</div>
+                <div class="span4">
+                    <h2>Supports SCSS</h2>
+                    <p>Generate well formatted CSS and make your stylesheets easier to organize and maintain with the Compass Framework. </p>
+                    <p>
+                        <a class="btn btn-small tooltipped" href="http://compass-style.org" target="_blank" data-original-title="Compass Homepage"><i class="icon-star"></i> Compass</a>
+                    </p>
+                </div>
             </div> 
 
             <hr>
