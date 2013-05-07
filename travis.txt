@@ -1,8 +1,0 @@
-language: php
-php:
-  - "5.3"
-  - "5.2"
-
-notifications:
-  email:
-    - christopher@webdressing.de
