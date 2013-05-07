@@ -10,8 +10,6 @@ $experimental-support-for-khtml:false;
 $experimental-support-for-opera:false;
 
 @import "compass/css3";
-@import "animate";
-
 
 /**
  * Import the configuration files
@@ -30,7 +28,7 @@ $experimental-support-for-opera:false;
  */
 
 @import "mixins/gridunits";
-@import "mixins/animation";
+//@import "mixins/animation";
 @import "mixins/typography";
 
 
@@ -39,7 +37,10 @@ $experimental-support-for-opera:false;
  * 
  */
 
-@import "frameworks/normalize";
+@import "frameworks/bootstrap";
+@import "frameworks/bootstrap-responsive";
+@import "frameworks/font-awesome";
+@import "frameworks/ligature-symbols";
 
 
 /**
@@ -47,10 +48,10 @@ $experimental-support-for-opera:false;
  * 
  */
 
-@import "application/header/default";
-@import "application/header/mediaqueries";
+//@import "application/header/default";
+//@import "application/header/mediaqueries";
 
 @import "application/body/default";
-@import "application/body/mediaqueries";
+//@import "application/body/mediaqueries";
 
 

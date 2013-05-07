@@ -39,3 +39,4 @@ List of Framework Documentations
 ## Compass SCSS Framework
 * Installation: [http://compass-style.org/install/](http://compass-style.org/install/)
 * Documentation: [http://compass-style.org/reference/compass/](http://compass-style.org/reference/compass/)
+* Installation of Animate [https://github.com/ericam/compass-animation](https://github.com/ericam/compass-animation)

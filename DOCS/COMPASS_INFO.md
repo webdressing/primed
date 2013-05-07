@@ -11,6 +11,9 @@ As Compass is well documentated I refer to the official documentations
 * Installation: [http://compass-style.org/install/](http://compass-style.org/install/)
 * Documentation: [http://compass-style.org/reference/compass/](http://compass-style.org/reference/compass/)
 
+I've also added a Compass Plugin named 'Animate'.
+* Installation of Animate [https://github.com/ericam/compass-animation](https://github.com/ericam/compass-animation)
+
 You can modify the pre-configuration by opening the 'config.rb' in your root.
 
 Pro Tipp: Don't deliver the 'config.rb' and the 'scss'-Folder to a running project. Use it for production only to keep the delivery of your software as clean as possible.
