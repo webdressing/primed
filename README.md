@@ -10,7 +10,6 @@ intuitive and well documented Application Framework with contemporary Frontend-A
 * Source: [https://github.com/webdressing/primed](https://github.com/webdressing/primed)
 * Homepage: [http://www.webdressing.de](http://www.webdressing.de)
 
-Build Status: [![Build Status](https://travis-ci.org/webdressing/primed.png?branch=compass-integration)](https://travis-ci.org/webdressing/primed)
 
 ## How to start?
 
