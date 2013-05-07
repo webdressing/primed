@@ -118,6 +118,13 @@
                     	<a class="btn btn-small btn-green tooltipped" href="http://maestric.com/doc/php/codeigniter_i18n" target="_blank" data-original-title="User Guide"><i class="icon-file-alt"></i> Documentation</a>
 					</p>
                	</div>
+                <div class="span4">
+                    <h2>Compass</h2>
+                    <p>Generates well formatted CSS and makes your stylesheets easier to organize and maintain. </p>
+                    <p>
+                        <a class="btn btn-small tooltipped" href="http://compass-style.org" target="_blank" data-original-title="Compass Homepage"><i class="icon-star"></i> Compass</a>
+                    </p>
+                </div>
             </div> 
 
             <hr>
