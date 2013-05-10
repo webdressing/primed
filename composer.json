@@ -1,0 +1,10 @@
+{
+"description" : "Dependencies for CodeIgniter's testing environment",
+"name" : "webdressing/primed",
+"require": {
+"php": ">=5.2.4"
+},
+"require-dev": {
+"mikey179/vfsStream": "*"
+}
+}
