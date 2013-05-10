@@ -1,4 +1,4 @@
-primed [![Build Status](https://travis-ci.org/webdressing/primed.png?branch=master)](https://travis-ci.org/webdressing/primed)
+primed
 =============================
 
 Ready to go Combo of extended CodeIgniter, HTML5 Boilerplate & Twitter Bootstrap 
