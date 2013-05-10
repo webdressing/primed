@@ -49,9 +49,10 @@
                     <div class="nav-collapse collapse">
                         <ul class="nav">
                             <li class="nav active"><a href="<?= site_url('demo');?>">Welcome</a></li>
+                            <li class="nav"><a href="https://github.com/webdressing/primed/blob/master/README.md" target="_blank">Getting Started</a></li>
                             <li class="nav"><a href="<?= site_url("demo/samples");?>">Demo Templates</a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Switch Language Demo<b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Language Demo<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
                                     <li><?= anchor($this->lang->switch_uri('de'),'deutsch / german (refresh)');?></li>
@@ -74,26 +75,29 @@
             <div class="hero-unit" id="heroContainer"></div> <!-- content via ajax, script at the foot -->
 
             <div class="row">
-                <div class="span4">
+
+                <!--h1>Frameworks & Plugins</h1-->
+
+                <div class="span4 pc">
                     <h2 class="plugin plugin-icon plugins-ci">CodeIgniter</h2>
                     <p class="plugin">This installation uses <strong>CodeIgniter 2.1.3</strong> as server-side application framework. </p>
-                    <p>
+                    <p class="plugin">
                         <a class="btn btn-small btn-green tooltipped" href="http://ellislab.com/codeigniter/user-guide/" target="_blank" data-original-title="User Guide"><i class="icon-file-alt"></i> Documentation</a>
                         <a class="btn btn-small tooltipped" href="https://github.com/EllisLab/CodeIgniter/" target="_blank" data-original-title="show Project on GitHub"><i class="icon-github"></i> GitHub</a>
                         <a class="btn btn-small tooltipped" href="http://ellislab.com/forums" target="_blank" data-original-title="CodeIgniter Community"><i class="icon-comments"></i> Community</a>
                     </p>
                 </div>
-                <div class="span4">
+                <div class="span4 pc">
                     <h2 class="plugin plugin-icon plugins-html5">HTML5 Boilerplate</h2>
                     <p class="plugin">The page you see here is a clean, responsive HTML5 template using <strong>HTML5 Boilerplate 4.1.0</strong>, <strong>Modernizr 2.6.2</strong> and <strong>JQuery 1.9.1</strong>.</p>
-               	    <p>
+               	    <p class="plugin">
                         <a class="btn btn-small btn-green tooltipped" href="https://github.com/h5bp/html5-boilerplate" target="_blank" data-original-title="User Guide"><i class="icon-file-alt"></i> Documentation / <i class="icon-github"></i> GitHub</a>
                     </p>
                 </div>
-                <div class="span4">
+                <div class="span4 pc">
                     <h2 class="plugin plugin-icon plugins-bootstrap">Bootstrap</h2>
                     <p class="plugin">To bring it all up to a round figure, we added <strong>Twitter Bootstrap 2.3.0</strong> as extension with all it's nice and fancy CSS and Javascript magic.</p>
-               	    <p>
+               	    <p class="plugin">
                         <a class="btn btn-small btn-green tooltipped" href="http://twitter.github.com/bootstrap/getting-started.html" target="_blank" data-original-title="User Guide"><i class="icon-file-alt"></i> Documentation</a>
                         <a class="btn btn-small tooltipped" href="https://github.com/twitter/bootstrap" target="_blank" data-original-title="show Project on GitHub"><i class="icon-github"></i> GitHub</a>
                         <a class="btn btn-small tooltipped" href="http://blog.getbootstrap.com/" target="_blank" data-original-title="Project Blog"><i class="icon-comment"></i> Blog</a>
@@ -104,25 +108,25 @@
             <hr>
             <!-- Example row of columns -->
             <div class="row">
-                <div class="span4">
+                <div class="span4 pc">
                     <h2 class="plugin plugin-icon plugins-fontawesome">Font Icon Sets</h2>
                     <p class="plugin">I've added <strong>Font Awesome 3.0</strong> and <strong>Ligature Symbols 2.11</strong> Icon Sets. You will find the fonts at "assets/fonts".</p>
-               	    <p>
+               	    <p class="plugin">
                         <a class="btn btn-small tooltipped" href="http://fortawesome.github.com/Font-Awesome/" target="_blank" data-original-title="Font Awesome Homepage"><i class="icon-star"></i> Font Awesome</a>
                         <a class="btn btn-small tooltipped" href="http://kudakurage.com/ligature_symbols/" target="_blank" data-original-title="Ligature Symbols Homepage"><i class="icon-star"></i> Ligature Symbols</a>
                     </p>
                 </div>
-                <div class="span4">
+                <div class="span4 pc">
                     <h2 class="plugin plugin-icon plugins-i18n">CodeIgniter i18n</h2>
                     <p class="plugin">Integrated plugin for internationalization with language codes for the European Union. The Plugin uses a SEO-friendly URI to get/set the language.</p>
-               	    <p>
+               	    <p class="plugin">
                         <a class="btn btn-small btn-green tooltipped" href="http://maestric.com/doc/php/codeigniter_i18n" target="_blank" data-original-title="User Guide"><i class="icon-file-alt"></i> Documentation</a>
                     </p>
                 </div>
-                <div class="span4">
+                <div class="span4 pc">
                     <h2 class="plugin plugin-icon plugins-compass">Supports SCSS</h2>
                     <p class="plugin">Generate well formatted CSS and make your stylesheets easier to organize and maintain with the Compass Framework. </p>
-                    <p>
+                    <p class="plugin">
                         <a class="btn btn-small tooltipped" href="http://compass-style.org" target="_blank" data-original-title="Compass Homepage"><i class="icon-star"></i> Compass</a>
                     </p>
                 </div>

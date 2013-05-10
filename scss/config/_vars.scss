@@ -1,0 +1,82 @@
+
+/**
+ * Config: _vars.scss
+ *
+ * Taking variables for further use
+ * 
+ */
+
+
+// Dropdowns
+$dropdownDividerBottom:         $white !default;
+$dropdownLinkColor:             $grayDark !default;
+$dropdownLinkColorHover:        $white !default;
+$dropdownLinkColorActive:       $white !default;
+
+$dropdownLinkBackgroundActive:  $linkColor !default;
+
+$dropdownLinkBackgroundHover:   $dropdownLinkBackgroundActive !default;
+
+
+// Lable/Sign Colors
+$warningBorder:           		darken(adjust-hue($warningBackground, -10), 3%) !default;
+$warningTextHover :				$warningText !default;
+
+$errorBorder:             		darken(adjust-hue($errorBackground, -10), 3%) !default;
+$errorTextHover :    			$errorText !default;
+
+$successBorder:           		darken(adjust-hue($successBackground, -10), 5%) !default;
+$successTextHover : 			$successText !default;
+
+$infoBorder:              		darken(adjust-hue($infoBackground, -10), 7%) !default;
+$infoTextHover :    			$infoText !default;
+
+// Lables
+$lableImportantText :   		$importantText !default;
+$lableImportantBg :   			$importantTBackground !default;
+
+$lableWarningText :   			$warningText !default;
+$lableWarningBg :   			$warningBackground !default;
+
+$lableSuccessText :   			$successText !default;
+$lableSuccessBg :   			$successBackground !default;
+
+$lableInfoText :   				$infoText !default;
+$lableInfoBg :   				$infoBackground !default;
+
+// Buttons
+$btnPrimaryBackground:              $linkColor !default;
+$btnPrimaryBackgroundHighlight:     adjust-hue($btnPrimaryBackground, 20%) !default;
+
+// Navbar
+$navbarBackground:                darken($navbarBackgroundHighlight, 5%) !default;
+$navbarBorder:                    darken($navbarBackground, 12%) !default;
+
+$navbarLinkBackgroundHover:       transparent !default;
+$navbarLinkBackgroundActive:      darken($navbarBackground, 5%) !default;
+
+$navbarBrandColor:                $navbarLinkColor !default;
+
+$navbarInverseText:                      $grayLight !default;
+$navbarInverseLinkColor:                 $grayLight !default;
+$navbarInverseLinkColorHover:            $white !default;
+$navbarInverseLinkColorActive:           $navbarInverseLinkColorHover !default;
+$navbarInverseLinkBackgroundHover:       transparent !default;
+$navbarInverseLinkBackgroundActive:      $navbarInverseBackground !default;
+
+$navbarInverseSearchBackground:          lighten($navbarInverseBackground, 25%) !default;
+$navbarInverseSearchBackgroundFocus:     $white !default;
+$navbarInverseSearchBorder:              $navbarInverseBackground !default;
+$navbarInverseSearchPlaceholderColor:    #ccc !default;
+
+$navbarInverseBrandColor:                $navbarInverseLinkColor !default;
+
+
+
+
+
+
+
+
+
+

@@ -49,9 +49,10 @@
                     <div class="nav-collapse collapse">
                         <ul class="nav">
                             <li class="nav"><a href="<?= site_url('demo');?>">Welcome</a></li>
+                            <li class="nav"><a href="https://github.com/webdressing/primed/blob/master/README.md" target="_blank">Getting Started</a></li>
                             <li class="nav active"><a href="<?= site_url("demo/samples");?>">Demo Templates</a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Switch Language Demo<b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Language Demo<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
                                     <li><?= anchor($this->lang->switch_uri('de'),'deutsch / german (refresh)');?></li>

@@ -22,83 +22,20 @@ $borderRadiusSmall : 			3px;
 $borderHeroRadius : 			15px;
 $inputBorderRadius :    		$borderRadiusSmall;
 
-$gridColumns : 					$columns;
-$gridColumnWidth:         		60px !default;
-$gridGutterWidth:         		20px !default;
-$gridRowWidth:            		($gridColumns * $gridColumnWidth) + ($gridGutterWidth * ($gridColumns - 1)) !default;
-
-// 1200px min
-$gridColumnWidth1200:     		70px !default;
-$gridGutterWidth1200:     		30px !default;
-$gridRowWidth1200:        		($gridColumns * $gridColumnWidth1200) + ($gridGutterWidth1200 * ($gridColumns - 1)) !default;
-
-// 768px-979px
-$gridColumnWidth768:      		42px !default;
-$gridGutterWidth768:      		20px !default;
-$gridRowWidth768:         		($gridColumns * $gridColumnWidth768) + ($gridGutterWidth768 * ($gridColumns - 1)) !default;
-
-
-// Fluid grid
-// -------------------------
-$fluidGridColumnWidth:    		percentage($gridColumnWidth/$gridRowWidth) !default;
-$fluidGridGutterWidth:    		percentage($gridGutterWidth/$gridRowWidth) !default;
-
-// 1200px min
-$fluidGridColumnWidth1200:     	percentage($gridColumnWidth1200/$gridRowWidth1200) !default;
-$fluidGridGutterWidth1200:     	percentage($gridGutterWidth1200/$gridRowWidth1200) !default;
-
-// 768px-979px
-$fluidGridColumnWidth768:      	percentage($gridColumnWidth768/$gridRowWidth768) !default;
-$fluidGridGutterWidth768:      	percentage($gridGutterWidth768/$gridRowWidth768) !default;
-
-$zindexDropdown:          		1000 !default;
-$zindexPopover:           		1010 !default;
-$zindexTooltip:           		1030 !default;
-$zindexFixedNavbar:       		1030 !default;
-$zindexModalBackdrop:     		1040 !default;
-$zindexModal:             		1050 !default;
-
-$horizontalComponentOffset:     180px !default;
-
-
 // Navbar
-// -------------------------
 $navbarCollapseWidth:             979px !default;
 $navbarCollapseDesktopWidth:      $navbarCollapseWidth + 1;
 
 $navbarHeight:                    40px !default;
 $navbarBackgroundHighlight:       #ffffff !default;
-$navbarBackground:                darken($navbarBackgroundHighlight, 5%) !default;
-$navbarBorder:                    darken($navbarBackground, 12%) !default;
 
 $navbarText:                      #777 !default;
 $navbarLinkColor:                 #777 !default;
 $navbarLinkColorHover:            $grayDark !default;
 $navbarLinkColorActive:           $gray !default;
-$navbarLinkBackgroundHover:       transparent !default;
-$navbarLinkBackgroundActive:      darken($navbarBackground, 5%) !default;
-
-$navbarBrandColor:                $navbarLinkColor !default;
 
 // Inverted navbar
-$navbarInverseBackground:                #111111 !default;
-$navbarInverseBackgroundHighlight:       #222222 !default;
-$navbarInverseBorder:                    #252525 !default;
-
-$navbarInverseText:                      $grayLight !default;
-$navbarInverseLinkColor:                 $grayLight !default;
-$navbarInverseLinkColorHover:            $white !default;
-$navbarInverseLinkColorActive:           $navbarInverseLinkColorHover !default;
-$navbarInverseLinkBackgroundHover:       transparent !default;
-$navbarInverseLinkBackgroundActive:      $navbarInverseBackground !default;
-
-$navbarInverseSearchBackground:          lighten($navbarInverseBackground, 25%) !default;
-$navbarInverseSearchBackgroundFocus:     $white !default;
-$navbarInverseSearchBorder:              $navbarInverseBackground !default;
-$navbarInverseSearchPlaceholderColor:    #ccc !default;
-
-$navbarInverseBrandColor:                $navbarInverseLinkColor !default;
-
-
-
+$navbarInverseBackground:         #111111 !default;
+$navbarInverseBackgroundHighlight:#222222 !default;
+$navbarInverseBorder:             #252525 !default;
 
