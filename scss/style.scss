@@ -48,10 +48,13 @@ $experimental-support-for-opera:false;
  * 
  */
 
-@import "application/header/default";
-//@import "application/header/mediaqueries";
-
-@import "application/body/default";
-//@import "application/body/mediaqueries";
+@import "partials/default";
 
 
+/**
+ * Import images for Spriting
+ * 
+ */
+
+@import "plugins/*.png";
+@include all-plugins-sprites;
