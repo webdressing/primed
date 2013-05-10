@@ -10,30 +10,37 @@
 
 @mixin fontcolor($color: '') {
     @if $color == '' {
-        color               : $base-font-color;
+        color               : $textColor;
     } @else if $color == 'grey' {
-        color               : $font-color-grey;
+        color               : $grey;
     } @else if $color == 'white' {
-        color               : $font-color-white;
+        color               : $white;
     } @else if $color == 'green' {
-        color               : $font-color-green;
-    } @else if $color == 'green-dark' {
-        color               : $font-color-green-dark;
+        color               : $green;
     } @else if $color == 'red' {
-        color               : $font-color-red;
+        color               : $red;
     }
 }
 
 
 @mixin font-size($size: ''){
-	@if $size == '' { $size: $default-font-size; }
+	@if $size == '' { $size: $defaultFontSize; }
   	font-size: $size + px;
   	font-size: ($size / 16) + rem;
 }
 
 
+@mixin font-size-multiply($val: ''){
+    @if $val == '' { $val: 1; }
+    font-size: ($defaultFontSize * $val) + px;
+    font-size: (($defaultFontSize * $val) / 16) + rem;
+}
+
+
 @mixin basefont($fs: '', $fc: '') {
-	font-family: $default-font-stack;
+    @if $fs == '' { $fs: $defaultFontSize; }
+    @if $fc == '' { $fs: $textColor; }
+	font-family: $defaultFontFamily;
     @include fontcolor($color: $fc);
     @include font-size($size: $fs);
 }

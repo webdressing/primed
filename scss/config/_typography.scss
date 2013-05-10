@@ -7,8 +7,26 @@
  */
 
 
-$fontPath:   					"../fonts" !default;
+// Scaffolding
+$fontPath :   					"../fonts" !default;
 
-$default-font-stack: 			Arial, sans-serif;
+// Typography
+$defaultFontFamily :   			Verdana;
+$sansFontFamily :   			'Helvetica Neue', Helvetica, Arial, sans-serif;
+$serifFontFamily :    			Georgia, 'Times New Roman', Times, serif;
+$monoFontFamily :    			Menlo, Monaco, 'Courier New', monospace;
+$defaultFontSize: 				14;  // unit (px, rem) added via mixin
+$baseFontSize: 					$defaultFontSize + px;  // unit (px, rem) added via mixin
+$baseFontFamily :    			$defaultFontFamily;
+$baseLineHeight :    			20px;
+$altFontFamily :    			$serifFontFamily;
+$headingsFontFamily :    		inherit;
+$headingsFontWeight :    		bold;
+$headingsColor :    			inherit;
+$fontSizeHero :    				$defaultFontSize * 1.75;
+$fontSizeLarge :    			$defaultFontSize * 1.25;
+$fontSizeSmall :    			$defaultFontSize * 0.85;
+$fontSizeMini :    				$defaultFontSize * 0.75;
 
-$default-font-size: 			16;  // unit (px, rem) added via mixin
+// Forms
+$inputHeight:                   $baseLineHeight + 10px; // base line-height + 8px vertical padding + 2px top/bottom border

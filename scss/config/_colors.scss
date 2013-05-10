@@ -7,63 +7,165 @@
  */
 
 
+// Scaffolding
+$bodyBackground : 				#fff !default;
+
+// Text
+$textColor : 					#333 !default;
+$headlineColor : 				#333 !default;
+
+// Special Texts
+$boxCodePreColor : 				#999 !default;
+
+// Links
+$linkColor :    				#99cc00 !default;
+$linkHoverColor : 				#99cc00 !default;
+$llinkActiveColor :    			$linkColor !default;
+$linkVisitedColor :    			$linkColor !default;
+
+// Colors
+$blue :    						#049cdb !default;
+$green :    					#46a546 !default;
+$red :    						#9d261d !default;
+$yellow :    					#ffc40d !default;
+$orange :    					#f89406 !default;
+$pink :    						#c3325f !default;
+$purple :    					#7a43b6 !default;
+$grey : 						#666 !default;
+$white : 						#fff !default;
+
+$black:                 		#000 !default;
+$grayDarker:            		#222 !default;
+$grayDark:              		#333 !default;
+$gray:                  		#555 !default;
+$grayLight:             		#999 !default;
+$grayLighter:           		#eee !default;
+$white:                 		#fff !default;
+
+// Forms
+$placeholderText :    			#999 !default;
+$inputBackground :    			#fff !default;
+$inputBorder :    				#ccc !default;
+$inputDisabledBackground :    	#ccc !default;
+$formActionsBackground :    	#f5f5f5 !default;
+$btnPrimaryBackground :    		$linkColor !default;
+$btnPrimaryBackgroundHighlight :$linkColor !default;
+
+// Dropdowns
+$dropdownBackground:            $white !default;
+$dropdownBorder:                rgba(0,0,0,.2) !default;
+$dropdownDividerTop:            #e5e5e5 !default;
+$dropdownDividerBottom:         $white !default;
+
+$dropdownLinkColor:             $grayDark !default;
+$dropdownLinkColorHover:        $white !default;
+$dropdownLinkColorActive:       $white !default;
+
+$dropdownLinkBackgroundActive:  $linkColor !default;
+$dropdownLinkBackgroundHover:   $dropdownLinkBackgroundActive !default;
+
+
+//Form states & alerts
+$warningText :    				#c09853 !default;
+$warningTextHover :				#c09853 !default;
+$warningBackground :    		#fcf8e3 !default;
+$warningBorder:           		darken(adjust-hue($warningBackground, -10), 3%) !default;
+
+$errorText :    				#b94a48 !default;
+$errorTextHover :    			#b94a48 !default;
+$errorBackground :    			#f2dede !default;
+$errorBorder:             		darken(adjust-hue($errorBackground, -10), 3%) !default;
+
+$successText :   				#468847 !default;
+$successTextHover : 			#468847 !default;
+$successBackground :    		#dff0d8 !default;
+$successBorder:           		darken(adjust-hue($successBackground, -10), 5%) !default;
+
+$infoText :    					#3a87ad !default;
+$infoTextHover :    			#3a87ad !default;
+$infoBackground :    			#d9edf7 !default;
+$infoBorder:              		darken(adjust-hue($infoBackground, -10), 7%) !default;
+
+// Lables
+$lableImportantText :   		#953b39 !default;
+$lableImportantBg :   			#b94a48 !default;
+
+$lableWarningText :   			#c67605 !default;
+$lableWarningBg :   			#f89406 !default;
+
+$lableSuccessText :   			#356635 !default;
+$lableSuccessBg :   			#468847 !default;
+
+$lableInfoText :   				#2d6987 !default;
+$lableInfoBg :   				#3a87ad !default;
+
+$lableInverseText :   			#1a1a1a !default;
+$lableInverseBg :   			#333333 !default;
+
+// Tables
+$tableBackground:                   transparent !default; // overall background-color
+$tableBackgroundAccent:             #f9f9f9 !default; // for striping
+$tableBackgroundHover:              #f5f5f5 !default; // for hover
+$tableBorder:                       #ddd !default; // table and cell border
+
+// Buttons
+$btnBackground:                     $white !default;
+$btnBackgroundHighlight:            darken($white, 10%) !default;
+$btnBorder:                         #ccc !default;
+
+$btnPrimaryBackground:              $linkColor !default;
+$btnPrimaryBackgroundHighlight:     adjust-hue($btnPrimaryBackground, 20%) !default;
+
+$btnInfoBackground:                 #5bc0de !default;
+$btnInfoBackgroundHighlight:        #2f96b4 !default;
+
+$btnSuccessBackground:              #62c462 !default;
+$btnSuccessBackgroundHighlight:     #51a351 !default;
+
+$btnWarningBackground:              lighten($orange, 15%) !default;
+$btnWarningBackgroundHighlight:     $orange !default;
+
+$btnDangerBackground:               #ee5f5b !default;
+$btnDangerBackgroundHighlight:      #bd362f !default;
+
+$btnInverseBackground:              #444 !default;
+$btnInverseBackgroundHighlight:     $grayDarker !default;
+
+// Tooltips and popovers
+$tooltipColor:            			#fff !default;
+$tooltipBackground:       			#000 !default;
+$tooltipArrowWidth:       			5px !default;
+$tooltipArrowColor:       			$tooltipBackground !default;
+
+$popoverBackground:       			#fff !default;
+$popoverArrowWidth:       			10px !default;
+$popoverArrowColor:       			#fff !default;
+$popoverTitleBackground:  			darken($popoverBackground, 3%) !default;
+
+// Special enhancement for popovers
+$popoverArrowOuterWidth:  			$popoverArrowWidth + 1 !default;
+$popoverArrowOuterColor:  			rgba(0,0,0,.25) !default;
+
+
 // Font Awesome Icons
-$iconBorderColor:       		#eee;
-$iconMuted:         			#eee;
+$iconBorderColor:       			#eee !default;
+$iconMuted:         				#eee !default;
+
+// Pagination
+$paginationBackground:          	#fff !default;
+$paginationBorder:                  #ddd !default;
+$paginationActiveBackground:        #f5f5f5 !default;
 
 
+// Hero unit
+$heroUnitBackground:              	$grayLighter !default;
+$heroUnitHeadingColor:            	inherit !default;
+$heroUnitLeadColor:               	inherit !default;
+
+$placeholderText:         			$grayLight !default;
+
+$hrBorder:                			$grayLighter !default;
+
+$wellBackground:                  	#f5f5f5 !default;
 
 
-
-/***************************************************************************************
- *
- * OBSOLETE LINES TO BE DELETED AFTERWARDS
- * 
- */
-
-/*
-// font color settings
-$base-font-color                : #58595b;
-$font-color-grey                : #898989;
-$font-color-white               : #ffffff;
-$font-color-green               : #5e9114;
-$font-color-green-dark          : #3d600a;
-$font-color-red                 : #cc0000;
-
-// link color settings
-$link-color                     : #676767;
-$link-hover-color               : #676767;
-$link-active-color              : $link-color;
-$link-visited-color             : $link-color;
-
-// header color settings
-$head-link-color                : #707070;
-$head-link-visited-color        : $head-link-color;
-$head-link-active-color         : #58595b;
-$head-link-hover-color          : $head-link-active-color;
-$head-meta-div-color            : #a8a9ab;
-
-// background color settings
-$bg-color-white                 : #ffffff;
-$bg-color-white-gradient        : $bg-color-white 57%, #ececec;
-$bg-color-grey                  : #d4d1d0;
-$bg-color-grey-gradient-invert  : #d3d3d3, #ececec 68%;
-$bg-color-grey-medium           : #aaaaaa;
-$bg-color-grey-medium-gradient  : $bg-color-grey-medium, $bg-color-grey;
-$bg-color-grey-dark             : #6b6969;
-$bg-color-grey-dark-gradient    : $bg-color-grey-dark, #a3a3a3;
-$bg-color-grey-dark-gradient-invert: #a3a3a3, $bg-color-grey-dark;
-$bg-color-flyout-grey			: #a1a1a1;
-$bg-color-flyout-grey-gradient	: $bg-color-flyout-grey, #6d6b6b;
-$bg-color-green                 : #7fce0d;
-$bg-color-green-gradient        : #98eb20, #71ac1c 68%;
-$bg-color-green-gradient-invert : #71ac1c 32%, #98eb20;
-$bg-color-green-medium          : #76b82a;
-$bg-color-red                   : #cc0000;
-$bg-color-red-gradient          : $bg-color-red, #dd0000;
-$bg-color-overlay				: #1a1b1c;
-
-// bg-color for selected text
-$selected-background-color      : #99CC33;
-
-*/

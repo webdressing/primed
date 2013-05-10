@@ -145,7 +145,7 @@ ul.icons {
 .icon-border {
   border: solid 1px $iconBorderColor;
   padding: .2em .25em .15em;
-  @include border-radius(3px);
+  @include border-radius($borderRadiusSmall);
 }
 
 // Icon Sizes
@@ -155,7 +155,7 @@ ul.icons {
   font-size: 2em;
   &.icon-border {
     border-width: 2px;
-    @include border-radius(4px);
+    @include border-radius($borderRadiusDefault);
   }
 }
 .icon-3x {
@@ -169,7 +169,7 @@ ul.icons {
   font-size: 4em;
   &.icon-border {
     border-width: 4px;
-    @include border-radius(6px);
+    @include border-radius($borderRadiusLarge);
   }
 }
 

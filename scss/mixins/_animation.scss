@@ -2,27 +2,50 @@
 /**
  * Mixin: _animation.scss
  *
- * Mixin to generate animations (https://github.com/ericam/compass-animate)
  * Config-File: config/mixins
- *
- * Possible animations
- *
- * Attention    : attention, flash, bounce, shake, tada, swing, wobble, wiggle, pulse
- * Fade         : fade,fadeIn, fadeInUp, fadeInDown, fadeInLeft, fadeInRight,fadeOut, fadeOutUp, fadeOutDown, fadeOutLeft, fadeOutRight
- * Bounce       : bounce,bounceIn, bounceInDown, bounceInUp, bounceInLeft, bounceInRight,bounceOut, bounceOutDown, bounceOutUp, bounceOutLeft, bounceOutRight
- * Roll         : roll,rollIn,rollOut
- * Rotate       : rotate,rotateIn, rotateInDownLeft, rotateInDownRight, rotateInUpLeft, rotateInUpRight,rotateOut, rotateOutDownLeft, rotateOutDownRight, rotateOutUpLeft, rotateOutUpRight
  * 
  */
 
-@include animate-fadeIn;
-
-@mixin animate(
-	$name               : fadeIn, 
-	$duration           : $default-animation-duration, 
-	$delay              : $default-animation-delay, 
-	$function           : $default-animation-function, 
-	$mode               : $default-animation-mode)
-	{
-		@include experimental(animation, $name $duration $delay $function $mode);
+@mixin keyframe ($animation_name) {
+	@-webkit-keyframes $animation_name {
+		@content;
 	}
+	 
+	@-moz-keyframes $animation_name {
+		@content;
+	}
+	 
+	@-o-keyframes $animation_name {
+		@content;
+	}
+	 
+	@keyframes $animation_name {
+		@content;
+	}
+}
+
+// Example: @include animation(10s, 5s, changecolour)
+
+@mixin animation ($delay, $duration, $animation) {
+	-webkit-animation-delay: $delay;
+	-webkit-animation-duration: $duration;
+	-webkit-animation-name: $animation;
+	-webkit-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+	 
+	-moz-animation-delay: $delay;
+	-moz-animation-duration: $duration;
+	-moz-animation-name: $animation;
+	-moz-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+	 
+	-o-animation-delay: $delay;
+	-o-animation-duration: $duration;
+	-o-animation-name: $animation;
+	-o-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+	 
+	animation-delay: $delay;
+	animation-duration: $duration;
+	animation-name: $animation;
+	animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+}
+
+
