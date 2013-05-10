@@ -1,7 +1,4 @@
-<?php
-
-if (!defined('BASEPATH'))
-    exit('No direct script access allowed');
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
  * CodeIgniter
  *
@@ -15,6 +12,7 @@ if (!defined('BASEPATH'))
  * @since		Version 1.0
  * @filesource
  */
+
 // ------------------------------------------------------------------------
 
 /**
@@ -26,6 +24,7 @@ if (!defined('BASEPATH'))
  * @author		ExpressionEngine Dev Team
  * @link		http://codeigniter.com/user_guide/helpers/url_helper.html
  */
+
 // ------------------------------------------------------------------------
 
 /**
@@ -40,21 +39,23 @@ if (!defined('BASEPATH'))
  * @param	string	the method: location or redirect
  * @return	string
  */
-if (!function_exists('redirect')) {
-
-    function redirect($uri = '', $method = 'location', $http_response_code = 302) {
-        if (!preg_match('#^https?://#i', $uri)) {
-            $uri = site_url($uri);
-        }
-
-        switch ($method) {
-            case 'refresh' : $GLOBALS['OUT']->set_header("Refresh:0;url=" . $uri);
-                break;
-            default : $GLOBALS['OUT']->set_header("Location: " . $uri, TRUE, $http_response_code);
-                break;
-        }
-    }
-
+if ( ! function_exists('redirect'))
+{
+	function redirect($uri = '', $method = 'location', $http_response_code = 302)
+	{
+		if ( ! preg_match('#^https?://#i', $uri))
+		{
+			$uri = site_url($uri);
+		}
+	
+		switch($method)
+		{
+			case 'refresh'	: $GLOBALS['OUT']->set_header("Refresh:0;url=".$uri);
+				break;
+			default		: $GLOBALS['OUT']->set_header("Location: ".$uri, TRUE, $http_response_code);
+				break;
+		}
+	}
 }
 
 /* End of file CIU_url_helper.php */

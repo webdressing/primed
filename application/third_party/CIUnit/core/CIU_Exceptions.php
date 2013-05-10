@@ -1,7 +1,4 @@
-<?php
-
-if (!defined('BASEPATH'))
-    exit('No direct script access allowed');
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
  * CodeIgniter
  *
@@ -15,6 +12,7 @@ if (!defined('BASEPATH'))
  * @since		Version 1.0
  * @filesource
  */
+
 // ------------------------------------------------------------------------
 
 /**
@@ -27,102 +25,111 @@ if (!defined('BASEPATH'))
  * @link		http://codeigniter.com/user_guide/libraries/exceptions.html
  */
 class CIU_Exceptions extends CI_Exceptions {
+    
+	/**
+	 * Exception Logger
+	 *
+	 * This function logs PHP generated error messages
+	 *
+	 * @access	private
+	 * @param	string	the error severity
+	 * @param	string	the error string
+	 * @param	string	the error filepath
+	 * @param	string	the error line number
+	 * @return	string
+	 */
+	function log_exception($severity, $message, $filepath, $line)
+	{
+		$severity = ( ! isset($this->levels[$severity])) ? $severity : $this->levels[$severity];
 
-    /**
-     * Exception Logger
-     *
-     * This function logs PHP generated error messages
-     *
-     * @access	private
-     * @param	string	the error severity
-     * @param	string	the error string
-     * @param	string	the error filepath
-     * @param	string	the error line number
-     * @return	string
-     */
-    function log_exception($severity, $message, $filepath, $line) {
-        $severity = (!isset($this->levels[$severity])) ? $severity : $this->levels[$severity];
+		log_message('error', 'Severity: '.$severity.'  --> '.$message. ' '.$filepath.' '.$line, TRUE);
+	}
 
-        log_message('error', 'Severity: ' . $severity . '  --> ' . $message . ' ' . $filepath . ' ' . $line, TRUE);
-    }
+	// --------------------------------------------------------------------
 
-    // --------------------------------------------------------------------
+	/**
+	 * 404 Page Not Found Handler
+	 *
+	 * @access	private
+	 * @param	string
+	 * @return	string
+	 */
+	function show_404($page = '', $log_error = TRUE)
+	{
+		$heading = "404 Page Not Found";
+		$message = "The page you requested was not found.";
 
-    /**
-     * 404 Page Not Found Handler
-     *
-     * @access	private
-     * @param	string
-     * @return	string
-     */
-    function show_404($page = '', $log_error = TRUE) {
-        $heading = "404 Page Not Found";
-        $message = "The page you requested was not found.";
+		// By default we log this, but allow a dev to skip it
+		if ($log_error)
+		{
+			log_message('error', '404 Page Not Found --> '.$page);
+		}
 
-        // By default we log this, but allow a dev to skip it
-        if ($log_error) {
-            log_message('error', '404 Page Not Found --> ' . $page);
-        }
+		echo $this->show_error($heading, $message, 'error_404', 404);
+		exit;
+	}
 
-        echo $this->show_error($heading, $message, 'error_404', 404);
-        exit;
-    }
+	// --------------------------------------------------------------------
 
-    // --------------------------------------------------------------------
+	/**
+	 * General Error Page
+	 *
+	 * This function takes an error message as input
+	 * (either as a string or an array) and displays
+	 * it using the specified template.
+	 *
+	 * @access	private
+	 * @param	string	the heading
+	 * @param	string	the message
+	 * @param	string	the template name
+	 * @return	string
+	 */
+	function show_error($heading, $message, $template = 'error_general', $status_code = 500)
+	{
+		$message = implode(' ', ( ! is_array($message)) ? array($message) : $message);
 
-    /**
-     * General Error Page
-     *
-     * This function takes an error message as input
-     * (either as a string or an array) and displays
-     * it using the specified template.
-     *
-     * @access	private
-     * @param	string	the heading
-     * @param	string	the message
-     * @param	string	the template name
-     * @return	string
-     */
-    function show_error($heading, $message, $template = 'error_general', $status_code = 500) {
-        $message = implode(' ', (!is_array($message)) ? array($message) : $message);
+		if (ob_get_level() > $this->ob_level + 1)
+		{
+			ob_end_flush();
+		}
+		
+		echo "[CIUnit] Error: $status_code Message: $message\n";
+		return;
+	}
 
-        if (ob_get_level() > $this->ob_level + 1) {
-            ob_end_flush();
-        }
+	// --------------------------------------------------------------------
 
-        echo "[CIUnit] Error: $status_code Message: $message\n";
-        return;
-    }
+	/**
+	 * Native PHP error handler
+	 *
+	 * @access	private
+	 * @param	string	the error severity
+	 * @param	string	the error string
+	 * @param	string	the error filepath
+	 * @param	string	the error line number
+	 * @return	string
+	 */
+	function show_php_error($severity, $message, $filepath, $line)
+	{
+		$severity = ( ! isset($this->levels[$severity])) ? $severity : $this->levels[$severity];
 
-    // --------------------------------------------------------------------
+		$filepath = str_replace("\\", "/", $filepath);
 
-    /**
-     * Native PHP error handler
-     *
-     * @access	private
-     * @param	string	the error severity
-     * @param	string	the error string
-     * @param	string	the error filepath
-     * @param	string	the error line number
-     * @return	string
-     */
-    function show_php_error($severity, $message, $filepath, $line) {
-        $severity = (!isset($this->levels[$severity])) ? $severity : $this->levels[$severity];
+		// For safety reasons we do not show the full file path
+		if (FALSE !== strpos($filepath, '/'))
+		{
+			$x = explode('/', $filepath);
+			$filepath = $x[count($x)-2].'/'.end($x);
+		}
 
-        $filepath = str_replace("\\", "/", $filepath);
+		if (ob_get_level() > $this->ob_level + 1)
+		{
+			ob_end_flush();
+		}
+		
+		echo "[CIUnit] PHP Error: $severity - $message File Path: $filepath (line: $line)\n";
+	}
 
-        // For safety reasons we do not show the full file path
-        if (FALSE !== strpos($filepath, '/')) {
-            $x = explode('/', $filepath);
-            $filepath = $x[count($x) - 2] . '/' . end($x);
-        }
-
-        if (ob_get_level() > $this->ob_level + 1) {
-            ob_end_flush();
-        }
-
-        echo "[CIUnit] PHP Error: $severity - $message File Path: $filepath (line: $line)\n";
-    }
 
 }
 

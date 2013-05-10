@@ -21,4 +21,8 @@ php:
 #before_script:
 
 # omitting "script:" will default to phpunit
+<<<<<<< HEAD
 script: phpunit --configuration tests/phpunit.xml
+=======
+script: phpunit --configuration tests/phpunit.xml
+>>>>>>> unit tests
