@@ -6,12 +6,9 @@ UPDATES
 
 * updated i18n-Plugin and changed the configuration, 'routes' are fixed 
 * added automatic browser language detection to i18n module
-<<<<<<< HEAD
 * updated 'Font-Awesome' to version 4.2.0, now we support SCSS and LESS
-=======
-* updated 'Font-Awesome' to version 4.2.0
 * updated Twitter Bootstrap to version 3.3.0
->>>>>>> bootstrap
+
 
 ## initial version
 
