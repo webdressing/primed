@@ -2,11 +2,11 @@ UPDATES
 =============================
 
 
-## 2014 - 10 - 29
+## 29.10.2014
 
 * updated i18n-Plugin and changed the configuration, 'routes' are fixed 
 * added automatic browser language detection to i18n module
-
+* updated 'Font-Awesome' to version 4.2.0
 
 ## initial version
 

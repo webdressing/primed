@@ -9,7 +9,7 @@ intuitive and well documented Application Framework with contemporary Frontend-A
 
 * Source: [https://github.com/webdressing/primed](https://github.com/webdressing/primed)
 * Homepage: [http://www.webdressing.de](http://www.webdressing.de)
-* Updates: [updates](DOCS/UPDATES.md)
+* Updates: [What's new...](DOCS/UPDATES.md)
 
 ## How to start?
 

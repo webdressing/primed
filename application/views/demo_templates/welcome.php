@@ -45,12 +45,12 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    <span class="brand"><strong><span class="sep">//</span> webdressing</strong> primed</span>
+                    <span class="brand"><span class="sep"><i class="fa fa-barcode"></i></span> .primed</span>
                     <div class="nav-collapse collapse">
                         <ul class="nav">
                             <li class="nav active"><a href="<?= site_url('demo');?>">Welcome</a></li>
                             <li class="nav"><a href="https://github.com/webdressing/primed/blob/master/README.md" target="_blank">Getting Started</a></li>
-                            <li class="nav"><a href="<?= site_url("demo/samples");?>">Demo Templates</a></li>
+                            <!--li class="nav"><a href="<?= site_url("demo/samples");?>">Demo Templates</a></li-->
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Language Demo<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
@@ -82,25 +82,25 @@
                     <h2 class="plugin plugin-icon plugins-ci">CodeIgniter</h2>
                     <p class="plugin">This installation uses <strong>CodeIgniter 2.1.3</strong> as server-side application framework. </p>
                     <p class="plugin">
-                        <a class="btn btn-small btn-green tooltipped" href="http://ellislab.com/codeigniter/user-guide/" target="_blank" data-original-title="User Guide"><i class="icon-file-alt"></i> Documentation</a>
-                        <a class="btn btn-small tooltipped" href="https://github.com/EllisLab/CodeIgniter/" target="_blank" data-original-title="show Project on GitHub"><i class="icon-github"></i> GitHub</a>
-                        <a class="btn btn-small tooltipped" href="http://ellislab.com/forums" target="_blank" data-original-title="CodeIgniter Community"><i class="icon-comments"></i> Community</a>
+                        <a class="btn btn-small btn-green tooltipped" href="http://ellislab.com/codeigniter/user-guide/" target="_blank" data-original-title="User Guide"><i class="fa fa-book"></i> Documentation</a>
+                        <a class="btn btn-small tooltipped" href="https://github.com/EllisLab/CodeIgniter/" target="_blank" data-original-title="show Project on GitHub"><i class="fa fa-github"></i> GitHub</a>
+                        <a class="btn btn-small tooltipped" href="http://ellislab.com/forums" target="_blank" data-original-title="CodeIgniter Community"><i class="fa fa-comments"></i> Community</a>
                     </p>
                 </div>
                 <div class="span4 pc">
                     <h2 class="plugin plugin-icon plugins-html5">HTML5 Boilerplate</h2>
                     <p class="plugin">The page you see here is a clean, responsive HTML5 template using <strong>HTML5 Boilerplate 4.1.0</strong>, <strong>Modernizr 2.6.2</strong> and <strong>JQuery 1.9.1</strong>.</p>
                	    <p class="plugin">
-                        <a class="btn btn-small btn-green tooltipped" href="https://github.com/h5bp/html5-boilerplate" target="_blank" data-original-title="User Guide"><i class="icon-file-alt"></i> Documentation / <i class="icon-github"></i> GitHub</a>
+                        <a class="btn btn-small btn-green tooltipped" href="https://github.com/h5bp/html5-boilerplate" target="_blank" data-original-title="User Guide"><i class="fa fa-book"></i> Documentation / <i class="fa fa-github"></i> GitHub</a>
                     </p>
                 </div>
                 <div class="span4 pc">
                     <h2 class="plugin plugin-icon plugins-bootstrap">Bootstrap</h2>
                     <p class="plugin">To bring it all up to a round figure, we added <strong>Twitter Bootstrap 2.3.0</strong> as extension with all it's nice and fancy CSS and Javascript magic.</p>
                	    <p class="plugin">
-                        <a class="btn btn-small btn-green tooltipped" href="http://twitter.github.com/bootstrap/getting-started.html" target="_blank" data-original-title="User Guide"><i class="icon-file-alt"></i> Documentation</a>
-                        <a class="btn btn-small tooltipped" href="https://github.com/twitter/bootstrap" target="_blank" data-original-title="show Project on GitHub"><i class="icon-github"></i> GitHub</a>
-                        <a class="btn btn-small tooltipped" href="http://blog.getbootstrap.com/" target="_blank" data-original-title="Project Blog"><i class="icon-comment"></i> Blog</a>
+                        <a class="btn btn-small btn-green tooltipped" href="http://twitter.github.com/bootstrap/getting-started.html" target="_blank" data-original-title="User Guide"><i class="fa fa-book"></i> Documentation</a>
+                        <a class="btn btn-small tooltipped" href="https://github.com/twitter/bootstrap" target="_blank" data-original-title="show Project on GitHub"><i class="fa fa-github"></i> GitHub</a>
+                        <a class="btn btn-small tooltipped" href="http://blog.getbootstrap.com/" target="_blank" data-original-title="Project Blog"><i class="fa fa-comment"></i> Blog</a>
                     </p>
                 </div>
             </div>
@@ -109,25 +109,25 @@
             <!-- Example row of columns -->
             <div class="row">
                 <div class="span4 pc">
-                    <h2 class="plugin plugin-icon plugins-fontawesome">Font Icon Sets</h2>
-                    <p class="plugin">I've added <strong>Font Awesome 3.0</strong> and <strong>Ligature Symbols 2.11</strong> Icon Sets. You will find the fonts at "assets/fonts".</p>
+                    <h2 class="plugin plugin-icon plugins-fontawesome">Font Icon Sets <a href="https://github.com/webdressing/primed/blob/master/DOCS/UPDATES.md" target="_blank"><i class="fa fa-star tooltipped update" data-original-title="UPDATE!"></a></i></h2>
+                    <p class="plugin">I've added <strong>Font Awesome 4.2</strong> and <strong>Ligature Symbols 2.11</strong> Icon Sets. You will find the fonts at "assets/fonts".</p>
                	    <p class="plugin">
-                        <a class="btn btn-small tooltipped" href="http://fortawesome.github.io/Font-Awesome/3.2.1/icons/" target="_blank" data-original-title="Font Awesome Homepage"><i class="icon-star"></i> Font Awesome</a>
-                        <a class="btn btn-small tooltipped" href="http://kudakurage.com/ligature_symbols/" target="_blank" data-original-title="Ligature Symbols Homepage"><i class="icon-star"></i> Ligature Symbols</a>
+                        <a class="btn btn-small tooltipped" href="http://fortawesome.github.io/Font-Awesome/3.2.1/icons/" target="_blank" data-original-title="Font Awesome Homepage"><i class="fa fa-star"></i> Font Awesome</a>
+                        <a class="btn btn-small tooltipped" href="http://kudakurage.com/ligature_symbols/" target="_blank" data-original-title="Ligature Symbols Homepage"><i class="fa fa-star"></i> Ligature Symbols</a>
                     </p>
                 </div>
                 <div class="span4 pc">
-                    <h2 class="plugin plugin-icon plugins-i18n">CodeIgniter i18n <i class="icon-info-sign tooltipped update" data-original-title="UPDATE!"></i></h2>
+                    <h2 class="plugin plugin-icon plugins-i18n">CodeIgniter i18n <a href="https://github.com/webdressing/primed/blob/master/DOCS/UPDATES.md" target="_blank"><i class="fa fa-star tooltipped update" data-original-title="UPDATE!"></a></i></h2>
                     <p class="plugin">Integrated plugin for internationalization with language codes for the European Union. The Plugin uses a SEO-friendly URI to get/set the language.</p>
                	    <p class="plugin">
-                        <a class="btn btn-small btn-green tooltipped" href="http://jeromejaglale.com/doc/php/codeigniter_i18n" target="_blank" data-original-title="User Guide"><i class="icon-file-alt"></i> Documentation</a>
+                        <a class="btn btn-small btn-green tooltipped" href="http://jeromejaglale.com/doc/php/codeigniter_i18n" target="_blank" data-original-title="User Guide"><i class="fa fa-book"></i> Documentation</a>
                     </p>
                 </div>
                 <div class="span4 pc">
                     <h2 class="plugin plugin-icon plugins-compass">Supports SCSS</h2>
                     <p class="plugin">Generate well formatted CSS and make your stylesheets easier to organize and maintain with the Compass Framework. </p>
                     <p class="plugin">
-                        <a class="btn btn-small tooltipped" href="http://compass-style.org" target="_blank" data-original-title="Compass Homepage"><i class="icon-star"></i> Compass</a>
+                        <a class="btn btn-small tooltipped" href="http://compass-style.org" target="_blank" data-original-title="Compass Homepage"><i class="fa fa-star"></i> Compass</a>
                     </p>
                 </div>
             </div> 
@@ -136,9 +136,7 @@
 
             <footer>
                 <p class="text-right">
-                	<a class="btn btn-mini footer" href="http://www.webdressing.de" target="_blank" data-original-title="webdressing.de"><i class="icon-comment"></i></a>
-                	<a class="btn btn-mini footer" href="https://github.com/webdressing" target="_blank" data-original-title="GitHub"><i class="icon-github"></i></a>
-                	<a class="btn btn-mini footer" href="http://de.linkedin.com/in/christopherkrumm" target="_blank" data-original-title="LinkedIn"><i class="icon-linkedin"></i></a>
+                	<a class="flink tooltiped" href="http://www.webdressing.de" target="_blank" data-original-title="webdressing"> <i class="fa fa-heart"></i> &amp; <i class="fa fa-coffee"></i> </a>
                 </p>
             </footer>
 
@@ -156,7 +154,7 @@
         	$(document).ready(function () { 
         	
         		$('.tooltipped').tooltip({placement:'bottom'}); 
-        		$('.footer').tooltip({placement:'top'});
+        		$('.flink').tooltip({placement:'top'});
         		
         		$("a.nav:first-child").addClass('active'); 
         		

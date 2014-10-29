@@ -45,7 +45,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    <span class="brand"><strong><span class="sep">//</span> webdressing</strong> primed</span>
+                    <span class="brand"><span class="sep"><i class="icon-barcode"></i></span> .primed</span>
                     <div class="nav-collapse collapse">
                         <ul class="nav">
                             <li class="nav"><a href="<?= site_url('demo');?>">Welcome</a></li>
@@ -103,9 +103,7 @@
 
             <footer>
                 <p class="text-right">
-                	<a class="btn btn-mini footer" href="http://www.webdressing.de" target="_blank" data-original-title="webdressing.de"><i class="icon-comment"></i></a>
-                	<a class="btn btn-mini footer" href="https://github.com/webdressing" target="_blank" data-original-title="GitHub"><i class="icon-github"></i></a>
-                	<a class="btn btn-mini footer" href="http://de.linkedin.com/in/christopherkrumm" target="_blank" data-original-title="LinkedIn"><i class="icon-linkedin"></i></a>
+                    <a class="flink" href="http://www.webdressing.de" target="_blank" > with <i class="icon-heart"></i></a>
                 </p>
             </footer>
 

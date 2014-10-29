@@ -33,7 +33,7 @@ List of Framework Documentations
 
 
 ## CodeIgniter i18n
-* Documentation: [http://maestric.com/doc/php/codeigniter_i18n](http://maestric.com/doc/php/codeigniter_i18n)
+* Documentation: [http://jeromejaglale.com/doc/php/codeigniter_i18n](http://jeromejaglale.com/doc/php/codeigniter_i18n)
 
 
 ## Compass SCSS Framework

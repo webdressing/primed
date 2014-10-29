@@ -38,16 +38,18 @@ body {
   padding: 60px 60px 10px;
 }
 
+/*
 a.lnk, a.lnk:hover, a.lnk:focus, a.lnk:active {
   color: #99cc00 !important;
 }
+*/
 
 .navbar .brand {
   padding: 7px 20px;
 }
 
 .footer {
-  font-size: 11px;
+  font-size: 10px;
   color: #999 !important;
 }
 
@@ -87,9 +89,13 @@ li.nav > a, li.dropdown > a, .dropdown-menu li > a {
   margin-left: 40px;
 }
 
+a.flink {
+    font-size: 10px;
+    text-decoration: none;
+    color: #999;
+  }
 
-
-//.pc {
-//  text-align: center;
-//}
+a.flink:hover {
+    color: #99cc00;
+  }
 
