@@ -6,7 +6,7 @@
  */
 
 body {
-  @include animation(0s, 1.8s, fadein);
+  /*@include animation(0s, 1.8s, fadein);*/
 }
 
 @include keyframe(fadein) {

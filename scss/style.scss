@@ -6,8 +6,6 @@
  * 
  */
 
-$experimental-support-for-khtml:false;
-$experimental-support-for-opera:false;
 
 @import "compass/css3";
 
@@ -37,8 +35,6 @@ $experimental-support-for-opera:false;
  * 
  */
 
-@import "frameworks/bootstrap";
-@import "frameworks/bootstrap-responsive";
 @import "frameworks/font-awesome/font-awesome";
 @import "frameworks/ligature-symbols";
 

@@ -24,6 +24,7 @@
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="assets/icons/microsoft-tileicon.png">
 
+        <link rel="stylesheet" href="assets/css/bootstrap.css">
         <link rel="stylesheet" href="assets/css/style.css">
 
         <script src="assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
@@ -95,8 +96,8 @@
                     </p>
                 </div>
                 <div class="span4 pc">
-                    <h2 class="plugin plugin-icon plugins-bootstrap">Bootstrap</h2>
-                    <p class="plugin">To bring it all up to a round figure, we added <strong>Twitter Bootstrap 2.3.0</strong> as extension with all it's nice and fancy CSS and Javascript magic.</p>
+                    <h2 class="plugin plugin-icon plugins-bootstrap">Bootstrap <a href="https://github.com/webdressing/primed/blob/master/DOCS/UPDATES.md" target="_blank"><i class="fa fa-star tooltipped update" data-original-title="UPDATE!"></a></i></h2>
+                    <p class="plugin">To bring it all up to a round figure, we added <strong>Twitter Bootstrap 3.3.0</strong> as extension with all it's nice and fancy CSS and Javascript magic.</p>
                	    <p class="plugin">
                         <a class="btn btn-small btn-green tooltipped" href="http://twitter.github.com/bootstrap/getting-started.html" target="_blank" data-original-title="User Guide"><i class="fa fa-book"></i> Documentation</a>
                         <a class="btn btn-small tooltipped" href="https://github.com/twitter/bootstrap" target="_blank" data-original-title="show Project on GitHub"><i class="fa fa-github"></i> GitHub</a>
