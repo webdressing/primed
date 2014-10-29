@@ -1,11 +1,14 @@
-Modifications / Changes
+UPDATES
 =============================
 
-To fit the Framworks and let them work together smoothly I had to make some adaptions.
-Although I left the core functionality of each Framework untouched, so that you can rely
-on Updates and Documentations.
 
-## Changes
+## 2014 - 10 - 29
+
+* updated i18n-Plugin and changed the configuration, 'routes' are fixed 
+* added automatic browser language detection to i18n module
+
+
+## initial version
 
 * added assets folder to document root and structured css, javascripts, icons, fonts and images there
 * moved images, js, css to from boilerplate to assets folder
