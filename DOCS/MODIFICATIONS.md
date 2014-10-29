@@ -6,6 +6,10 @@ Although I left the core functionality of each Framework untouched, so that you 
 on Updates and Documentations.
 
 ## Changes
+* updated i18n-Plugin and changed the configuration, 'routes' are fixed 
+* added automatic browser language detection to i18n module
+
+## Changes
 
 * added assets folder to document root and structured css, javascripts, icons, fonts and images there
 * moved images, js, css to from boilerplate to assets folder

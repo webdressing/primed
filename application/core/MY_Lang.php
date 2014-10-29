@@ -6,6 +6,8 @@
 
 class MY_Lang extends CI_Lang {
 
+
+
 	/**************************************************
 	 configuration
 	***************************************************/
@@ -58,18 +60,13 @@ class MY_Lang extends CI_Lang {
 		
 		$segment = $URI->segment(1);
 		
-		if (isset($this->languages[$segment]))	// URI with language -> ok
-		{
+		if (isset($this->languages[$segment]))		{
 			$language = $this->languages[$segment];
 			$CFG->set_item('language', $language);
 
-		}
-		else if($this->is_special($segment)) // special URI -> no redirect
-		{
+		}else if($this->is_special($segment)){
 			return;
-		}
-		else	// URI without language -> redirect to default_uri
-		{
+		}else{
 			// set default language
 			$CFG->set_item('language', $this->languages[$this->default_lang()]);
 
@@ -98,27 +95,22 @@ class MY_Lang extends CI_Lang {
 	function is_special($uri)
 	{
 		$exploded = explode('/', $uri);
-		if (in_array($exploded[0], $this->special))
-		{
+		if (in_array($exploded[0], $this->special))		{
 			return TRUE;
 		}
-		if(isset($this->languages[$uri]))
-		{
+		if(isset($this->languages[$uri]))		{
 			return TRUE;
 		}
 		return FALSE;
 	}
 	
-	function switch_uri($lang)
-	{
+	function switch_uri($lang) 	{
 		$CI =& get_instance();
 
 		$uri = $CI->uri->uri_string();
-		if ($uri != "")
-		{
+		if ($uri != "")		{
 			$exploded = explode('/', $uri);
-			if($exploded[0] == $this->lang())
-			{
+			if($exploded[0] == $this->lang())			{
 				$exploded[0] = $lang;
 			}
 			$uri = implode('/',$exploded);
@@ -127,8 +119,7 @@ class MY_Lang extends CI_Lang {
 	}
 	
 	// is there a language segment in this $uri?
-	function has_language($uri)
-	{
+	function has_language($uri) 	{
 		$first_segment = NULL;
 		
 		$exploded = explode('/', $uri);
@@ -152,18 +143,40 @@ class MY_Lang extends CI_Lang {
 		return FALSE;
 	}
 	
-	// default language: first element of $this->languages
-	function default_lang()
-	{
-		foreach ($this->languages as $lang => $language)
-		{
-			return $lang;
+	// default language: browser detection OR first element of $this->languages
+	function default_lang()	{
+
+		global $CFG;		
+
+		if ($CFG->item('language_detection')) {
+
+			$fallback = $CFG->item('language_fallback');
+
+			if ( (!empty($_SERVER['HTTP_ACCEPT_LANGUAGE'])) && ($_SERVER['HTTP_ACCEPT_LANGUAGE'] != '') ) {
+
+				$browser_lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+
+				if(array_key_exists($browser_lang, $CFG->item('lang_uri_abbr'))) {
+					$lang = $browser_lang;
+				}
+
+			} else {
+				$lang = $fallback;
+			}
+				
+		} else {
+
+			foreach ($this->languages as $lang => $language) {
+				$lang = $lang;
+			}
+
 		}
+		return $lang;
+		
 	}
 	
 	// add language segment to $uri (if appropriate)
-	function localized($uri)
-	{
+	function localized($uri) 	{
 		if($this->has_language($uri)
 				|| $this->is_special($uri)
 				|| preg_match('/(.+)\.[a-zA-Z0-9]{2,4}$/', $uri))

@@ -112,15 +112,15 @@
                     <h2 class="plugin plugin-icon plugins-fontawesome">Font Icon Sets</h2>
                     <p class="plugin">I've added <strong>Font Awesome 3.0</strong> and <strong>Ligature Symbols 2.11</strong> Icon Sets. You will find the fonts at "assets/fonts".</p>
                	    <p class="plugin">
-                        <a class="btn btn-small tooltipped" href="http://fortawesome.github.com/Font-Awesome/" target="_blank" data-original-title="Font Awesome Homepage"><i class="icon-star"></i> Font Awesome</a>
+                        <a class="btn btn-small tooltipped" href="http://fortawesome.github.io/Font-Awesome/3.2.1/icons/" target="_blank" data-original-title="Font Awesome Homepage"><i class="icon-star"></i> Font Awesome</a>
                         <a class="btn btn-small tooltipped" href="http://kudakurage.com/ligature_symbols/" target="_blank" data-original-title="Ligature Symbols Homepage"><i class="icon-star"></i> Ligature Symbols</a>
                     </p>
                 </div>
                 <div class="span4 pc">
-                    <h2 class="plugin plugin-icon plugins-i18n">CodeIgniter i18n</h2>
+                    <h2 class="plugin plugin-icon plugins-i18n">CodeIgniter i18n <i class="icon-info-sign tooltipped update" data-original-title="UPDATE!"></i></h2>
                     <p class="plugin">Integrated plugin for internationalization with language codes for the European Union. The Plugin uses a SEO-friendly URI to get/set the language.</p>
                	    <p class="plugin">
-                        <a class="btn btn-small btn-green tooltipped" href="http://maestric.com/doc/php/codeigniter_i18n" target="_blank" data-original-title="User Guide"><i class="icon-file-alt"></i> Documentation</a>
+                        <a class="btn btn-small btn-green tooltipped" href="http://jeromejaglale.com/doc/php/codeigniter_i18n" target="_blank" data-original-title="User Guide"><i class="icon-file-alt"></i> Documentation</a>
                     </p>
                 </div>
                 <div class="span4 pc">

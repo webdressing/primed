@@ -74,6 +74,10 @@ $config['language']	= 'english';
 /* default language abbreviation */
 $config['language_abbr'] = "en";
 
+/* Language detection ($_SERVER['HTTP_ACCEPT_LANGUAGE']) via user browser information. You can specify a fallback (shortcut) */
+$config['language_detection'] = true;
+$config['language_fallback'] = 'en';
+
 /* set available language abbreviations */
 $config['lang_uri_abbr'] = array(
 	'en' => 'english',
