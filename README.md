@@ -8,7 +8,7 @@ This Project consists of the Frameworks I most often use for developing a Websit
 intuitive and well documented Application Framework with contemporary Frontend-Architecture.
 
 * Source: [https://github.com/webdressing/primed](https://github.com/webdressing/primed)
-* Homepage: [http://www.webdressing.de](http://www.webdressing.de)
+* Homepage: [http://primed.webdressing.de](http://primed.webdressing.de)
 * Updates: [What's new...](DOCS/UPDATES.md)
 
 ## How to start?
