@@ -6,7 +6,7 @@
  */
 
 body {
-  /*@include animation(0s, 1.8s, fadein);*/
+  font-family: Verdana;
 }
 
 @include keyframe(fadein) {
@@ -36,13 +36,12 @@ body {
 
 .hero-unit {
   padding: 60px 60px 10px;
+
+  h1 {
+    font-size: 24px;
+  }
 }
 
-/*
-a.lnk, a.lnk:hover, a.lnk:focus, a.lnk:active {
-  color: #99cc00 !important;
-}
-*/
 
 .navbar .brand {
   padding: 7px 20px;
@@ -58,18 +57,24 @@ a.lnk, a.lnk:hover, a.lnk:focus, a.lnk:active {
 }
 
 h2.plugin {
-  width: auto;
   @include font-size(22);
   height: 50px;
   line-height: 50px;
-  margin: 0;
+  margin: 10px 0 0 10px;
   padding-left: 60px;
+  width: auto;
 }
 
 p.plugin {
   margin-top: 10px;
   padding: 10px;
   @include font-size(14);
+}
+
+.hero-unit > p {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .plugin-icon {
@@ -85,12 +90,12 @@ li.nav > a, li.dropdown > a, .dropdown-menu li > a {
 
 .update {
   color: #99CC00;
-  font-size: 25px;
-  margin-left: 40px;
+  font-size: 20px;
+  position: absolute;
 }
 
 a.flink {
-    font-size: 10px;
+    font-size: 12px;
     text-decoration: none;
     color: #999;
   }
@@ -98,4 +103,44 @@ a.flink {
 a.flink:hover {
     color: #99cc00;
   }
+
+li.nav > a, li.dropdown > a, .dropdown-menu li > a {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+.lang {
+  padding-top: 8px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.lang a {
+  color: #777777;
+  float: none;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #ffffff;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.lang a:hover {
+  color: #333;
+}
+
+.welcome-block {
+  margin-top: 80px;
+  padding: 20px;
+}
+
+.plugin-text {
+  display: block;
+  height: 90px;
+}
+
+.plugins .pc:hover {
+  background-color: #eee;
+  @include border-radius(5px);
+}
+
 

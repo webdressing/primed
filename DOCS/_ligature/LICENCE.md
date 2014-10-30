@@ -1,0 +1,4 @@
+Ligature Symbols Licence
+=============================
+
+

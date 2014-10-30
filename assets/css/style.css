@@ -1773,7 +1773,7 @@
  * 
  */
 body {
-  /*@include animation(0s, 1.8s, fadein);*/ }
+  font-family: Verdana; }
 
 @-webkit-keyframes $animation_name {
   0% {
@@ -1824,12 +1824,9 @@ body {
 
 .hero-unit {
   padding: 60px 60px 10px; }
+  .hero-unit h1 {
+    font-size: 24px; }
 
-/*
-a.lnk, a.lnk:hover, a.lnk:focus, a.lnk:active {
-  color: #99cc00 !important;
-}
-*/
 .navbar .brand {
   padding: 7px 20px; }
 
@@ -1841,19 +1838,24 @@ a.lnk, a.lnk:hover, a.lnk:focus, a.lnk:active {
   color: #99cc00; }
 
 h2.plugin {
-  width: auto;
   font-size: 22px;
   font-size: 1.375rem;
   height: 50px;
   line-height: 50px;
-  margin: 0;
-  padding-left: 60px; }
+  margin: 10px 0 0 10px;
+  padding-left: 60px;
+  width: auto; }
 
 p.plugin {
   margin-top: 10px;
   padding: 10px;
   font-size: 14px;
   font-size: 0.875rem; }
+
+.hero-unit > p {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 18px; }
 
 .plugin-icon {
   width: 50px;
@@ -1867,16 +1869,50 @@ li.nav > a, li.dropdown > a, .dropdown-menu li > a {
 
 .update {
   color: #99CC00;
-  font-size: 25px;
-  margin-left: 40px; }
+  font-size: 20px;
+  position: absolute; }
 
 a.flink {
-  font-size: 10px;
+  font-size: 12px;
   text-decoration: none;
   color: #999; }
 
 a.flink:hover {
   color: #99cc00; }
+
+li.nav > a, li.dropdown > a, .dropdown-menu li > a {
+  font-size: 0.7rem;
+  text-transform: uppercase; }
+
+.lang {
+  padding-top: 8px;
+  font-size: 0.7rem;
+  text-transform: uppercase; }
+
+.lang a {
+  color: #777777;
+  float: none;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #ffffff;
+  font-size: 0.7rem;
+  text-transform: uppercase; }
+
+.lang a:hover {
+  color: #333; }
+
+.welcome-block {
+  margin-top: 80px;
+  padding: 20px; }
+
+.plugin-text {
+  display: block;
+  height: 90px; }
+
+.plugins .pc:hover {
+  background-color: #eee;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; }
 
 /**
  * Import images for Spriting

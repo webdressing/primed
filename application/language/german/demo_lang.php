@@ -6,13 +6,27 @@
  *
  */
  
-$lang['language'] = "aktuell: deutsch";
-$lang['headline'] = "Hallo Welt!";
-$lang['welcome_p1'] = "Was du hier siehst wurde gerade von deiner CodeIgniter Installation dynamisch generiert und zeigt ein responsive HTML5 Template mit Twitter Bootstrap und einem Internationalisierungsplugin.";
-$lang['welcome_p2'] = "Diese Seite soll dir auch als Showcase dienen und dir eine Vorstellung davon geben, was du mit diesen Frameworks und Libraries alles machen kannst. Du findest dieses und weitere Templates im Verzeichnis <em><u>application/views/</u></em>, ver&auml;ndere es, spiel herum, tob dich aus...";
-$lang['enjoy'] = "Viel Spa&szlig;!"; 
+ 
+$lang['welcome'] = "
 
-$lang['demo_headline'] = "Beispielseiten";
-$lang['demo_p1'] = "Auf dieser Seite findest du weitere Beispiele und Vorlagen. Alle Demos sind der Twitter Bootstrap Dokumentation entnommen. Der untenstehende Link f&uuml;hrt dich zur Beispielseite von Twitter.";
-$lang['demo_twitter'] = "weitere Beispiele von Twitter";
+<h1>Yeah!</h1>
+
+<p>Wenn du diese Seite siehst wurde alles korrekt auf deinem Server eingerichtet, hier noch ein paar n&uuml;tzliche Links.</p>
+
+<p>Viel Spa&szlig;!</p>
+
+"; 
+
+
+
+
+
+$lang['nav_welcome'] = "Start";
+$lang['nav_doc'] = "Docs";
+$lang['nav_startnow'] = "Loslegen";
+$lang['nav_templates'] = "Templates";
+$lang['nav_langswitch'] = "Sprachwechsel";
+$lang['nav_plugin_overview'] = "Plugins";
+
+
 /* End of file */

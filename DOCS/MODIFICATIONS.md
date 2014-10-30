@@ -20,4 +20,4 @@ on Updates and Documentations.
 * prepared language folders in 'application/language' for European Union and added sample language
   files to 'application/language/english' and 'application/language/german' for demonstration
 * added some Twitter demo-templates to 'application/views' wich can be loaded inside CodeIgniter
-* moved the content of initial CSS-Files to SCSS-Files for [Compass SCSS/SASS Framework](DOCS/COMPASS_INFO.md) Compass integration
+* moved the content of initial CSS-Files to SCSS-Files for [Compass SCSS/SASS Framework](DOCS/_compass/COMPASS_INFO.md) Compass integration
