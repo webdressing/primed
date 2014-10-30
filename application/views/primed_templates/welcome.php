@@ -52,7 +52,7 @@
                                 <ul class="dropdown-menu">
                                     
                                     <li><a href="https://github.com/webdressing/primed/blob/master/DOCS/DOCUMENTATIONS.md" target="_blank">List of Documentations</a></li>
-                                    <li><a href="https://github.com/webdressing/primed/blob/master/DOCS/COMPASS_INFO.md" target="_blank">Compass (S)CSS</a></li>
+                                    <li><a href="https://github.com/webdressing/primed/blob/master/DOCS/_compass/COMPASS_INFO.md" target="_blank">Compass (S)CSS</a></li>
                                 
                                 </ul>
                             </li> 
