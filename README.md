@@ -11,17 +11,6 @@ intuitive and well documented Application Framework with contemporary Frontend-A
 * Homepage: [http://primed.webdressing.de](http://primed.webdressing.de)
 * Updates: [change.log](DOCS/CHANGES.md)
 
-## How to start?
-
-1. Download the latest version from
-   [https://github.com/webdressing/primed](https://github.com/webdressing/primed)
-2. Copy the files to your Server and run the
-   http://localhost/path-to-files/index.php
-3. Read the provided Documentations, explore the file-system, check out the Templates
-
-There is no installation process necessary as it runs from the scratch, you just have to configure it
-that it fits your needs.
-
 
 ## Features
 
@@ -33,6 +22,18 @@ that it fits your needs.
 * Extended Bootstrap with a lot of font-based icons
 * Internationalization extension for CodeIgniter, allready prepared for the European Union and easy to expand
 * Every used Framework or Plugin is well documented, open source and proven by daily use
+
+
+## How to start?
+
+1. Download the latest version from
+   [https://github.com/webdressing/primed](https://github.com/webdressing/primed)
+2. Copy the files to your Server and run the
+   http://localhost/path-to-files/index.php
+3. Read the provided Documentations, explore the file-system, check out the Templates
+
+There is no installation process necessary as it runs from the scratch, you just have to configure it
+that it fits your needs.
 
 
 ## Documentation
